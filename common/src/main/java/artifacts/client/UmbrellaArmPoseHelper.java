@@ -16,10 +16,10 @@ public class UmbrellaArmPoseHelper {
             boolean isRightHanded = entity.getMainArm() == HumanoidArm.RIGHT;
 
             if ((isHoldingMainHand && isRightHanded) || (isHoldingOffHand && !isRightHanded)) {
-                humanoidModel.rightArmPose = HumanoidModel.ArmPose.THROW_SPEAR;
+                humanoidModel.rightArmPose = HumanoidModel.ArmPose.EMPTY;
             }
             if ((isHoldingMainHand && !isRightHanded) || (isHoldingOffHand && isRightHanded)) {
-                humanoidModel.leftArmPose = HumanoidModel.ArmPose.THROW_SPEAR;
+                humanoidModel.leftArmPose = HumanoidModel.ArmPose.EMPTY;
             }
         }
     }
